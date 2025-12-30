@@ -1,10 +1,10 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Landing from './pages/Landing'
-import Profile from './pages/Profile'
-import Matches from './pages/Matches'
-import Chat from './pages/Chat'
-import Navigation from './components/Navigation'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Landing from './pages/Landing';
+import Profile from './pages/Profile';
+import Matches from './pages/Matches';
+import Chat from './pages/Chat';
+import Navigation from './components/Navigation';
 
 const App: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <Route path="/chat/:userId" element={<Chat />} />
       </</Routes>
     </</div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
