@@ -21,7 +21,6 @@ const Chat: React.FC = () => {
   } | null>(null);
 
   useEffect(() => {
-    // Mock data - in a real app, you would fetch from an API
     const mockMatches = [
       {
         id: '1',
@@ -85,8 +84,6 @@ const Chat: React.FC = () => {
 
     setMessages([...messages, message]);
     setNewMessage('');
-
-    // In a real app, you would send the message to the server here
   };
 
   if (!match) {
@@ -118,10 +115,18 @@ const Chat: React.FC = () => {
             className={`flex ${message.senderId === 'current' ? 'justify-end' : 'justify-start'}`}
           >
             <div
-              className={`max-w-xs md:max-w-md rounded-lg px-4 py-2 ${message.senderId === 'current' ? 'bg-love-primary text-white' : 'bg-gray-200 text-gray-800'}`}
+              className={`max-w-xs md:max-w-md rounded-lg px-4 py-2 ${
+                message.senderId === 'current'
+                  ? 'bg-love-primary text-white'
+                  : 'bg-gray-200 text-gray-800'
+              }`}
             >
               <p>{message.text}</</p>
-              <p className={`text-xs mt-1 ${message.senderId === 'current' ? 'text-white/70' : 'text-gray-500'}`}>
+              <p className={`text-xs mt-1 ${
+                message.senderId === 'current'
+                  ? 'text-white/70'
+                  : 'text-gray-500'
+              }`}>
                 {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
               </</p>
             </</div>
@@ -140,7 +145,7 @@ const Chat: React.FC = () => {
           />
           <button
             type="submit"
-            className="bg-love-primary p-2 rounded-full text-white hover:bg-pink-600 transition-colors"
+            className="bg-love-primary p-2 rounded-full text-white hover:bg-love-dark transition-colors"
           >
             <Send size={20} />
           </</button>

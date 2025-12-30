@@ -24,8 +24,7 @@ const Matches: React.FC = () => {
       interests: ['Hiking', 'Photography', 'Travel', 'Coffee'],
       photos: [
         'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=500&fit=crop&crop=face',
-        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop&crop=face',
-        'https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=500&fit=crop&crop=face'
+        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop&crop=face'
       ],
       distance: 5
     },
@@ -37,8 +36,7 @@ const Matches: React.FC = () => {
       interests: ['Yoga', 'Meditation', 'Vegan Cooking', 'Nature'],
       photos: [
         'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&crop=face',
-        'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=500&fit=crop&crop=face',
-        'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop&crop=face'
+        'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=500&fit=crop&crop=face'
       ],
       distance: 3
     },
@@ -50,8 +48,7 @@ const Matches: React.FC = () => {
       interests: ['Reading', 'Writing', 'Music', 'Art'],
       photos: [
         'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=500&fit=crop&crop=face',
-        'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop&crop=face',
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=500&fit=crop&crop=face'
+        'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop&crop=face'
       ],
       distance: 8
     }
@@ -103,14 +100,12 @@ const Matches: React.FC = () => {
                       <h2 className="text-2xl font-bold">{currentMatch.name}, {currentMatch.age}</</h2>
                       <p className="text-sm">{currentMatch.distance} miles away</</p>
                     </</div>
-                    <div className="flex space-x-2">
-                      <button
-                        onClick={() => navigate(`/chat/${currentMatch.id}`)}
-                        className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
-                      >
-                        <MessageCircle size={20} />
-                      </</button>
-                    </</div>
+                    <button
+                      onClick={() => navigate(`/chat/${currentMatch.id}`)}
+                      className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
+                    >
+                      <MessageCircle size={20} />
+                    </</button>
                   </</div>
                 </</div>
               </</div>
@@ -140,7 +135,7 @@ const Matches: React.FC = () => {
               </</button>
               <button
                 onClick={handleLike}
-                className="bg-love-primary p-4 rounded-full shadow-lg hover:bg-pink-600 transition-colors"
+                className="bg-love-primary p-4 rounded-full shadow-lg hover:bg-love-dark transition-colors"
               >
                 <Heart className="text-white" size={28} fill="white" />
               </</button>

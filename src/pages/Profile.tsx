@@ -14,8 +14,7 @@ const Profile: React.FC = () => {
   const [newInterest, setNewInterest] = useState('');
   const [photos, setPhotos] = useState<string[]>(currentUser?.photos || [
     'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face',
-    'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face',
-    'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face'
+    'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face'
   ]);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -44,8 +43,7 @@ const Profile: React.FC = () => {
   };
 
   const addPhoto = () => {
-    // In a real app, you would upload a file
-    const newPhoto = `https://images.unsplash.com/photo-${Math.floor(Math.random() * 1000)}?w=300&h=300&fit=crop&crop=face`;
+    const newPhoto = `https://images.unsplash.com/photo-${Math.floor(Math.random() * 100)}?w=300&h=300&fit=crop&crop=face`;
     setPhotos([...photos, newPhoto]);
   };
 
@@ -144,7 +142,7 @@ const Profile: React.FC = () => {
                 <button
                   type="button"
                   onClick={addInterest}
-                  className="bg-love-primary text-white px-4 py-2 rounded-r-lg hover:bg-pink-600 transition-colors"
+                  className="bg-love-primary text-white px-4 py-2 rounded-r-lg hover:bg-love-dark transition-colors"
                 >
                   Add
                 </</button>
@@ -155,7 +153,7 @@ const Profile: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full bg-love-primary text-white py-3 rounded-lg font-semibold hover:bg-pink-600 transition-colors"
+          className="w-full bg-love-primary text-white py-3 rounded-lg font-semibold hover:bg-love-dark transition-colors"
         >
           Save Profile
         </</button>

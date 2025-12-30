@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -8,11 +8,13 @@ export default {
     extend: {
       colors: {
         'love-primary': '#FF4081',
-        'love-secondary': '#8E24AA'
+        'love-secondary': '#8E24AA',
+        'love-light': '#FF80AB',
+        'love-dark': '#F50057',
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', 'sans-serif']
-      }
+        sans: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],
