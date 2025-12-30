@@ -38,10 +38,10 @@ const Landing: React.FC = () => {
         transition={{ duration: 0.5 }}
         className="mb-12"
       >
-        <h1 className="text-5xl font-bold text-love-primary mb-4">LoveLine</</h1>
+        <h1 className="text-5xl font-bold text-love-primary mb-4">LoveLine</h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Find your perfect match with our modern dating platform
-        </</p>
+        </p>
       </motion.</div>
 
       <motion.div
@@ -51,7 +51,7 @@ const Landing: React.FC = () => {
         className="glass-card max-w-md mx-auto p-8 rounded-2xl mb-12"
       >
         <form onSubmit={handleSignup} className="space-y-6">
-          <</div>
+          </div>
             <input
               type="email"
               value={email}
@@ -60,14 +60,14 @@ const Landing: React.FC = () => {
               className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-love-primary"
               required
             />
-          </</div>
+          </div>
           <button
             type="submit"
             className="w-full bg-love-primary text-white py-3 rounded-lg font-semibold hover:bg-love-dark transition-colors"
           >
             Get Started
-          </</button>
-        </</form>
+          </button>
+        </form>
       </motion.</div>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -81,12 +81,12 @@ const Landing: React.FC = () => {
             className="glass-card p-6 rounded-xl text-center"
           >
             <feature.icon className="mx-auto mb-4 text-love-primary" size={40} />
-            <h3 className="text-xl font-semibold mb-2">{feature.title}</</h3>
-            <p className="text-gray-600">{feature.description}</</p>
+            <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+            <p className="text-gray-600">{feature.description}</p>
           </motion.</div>
         ))}
-      </</div>
-    </</div>
+      </div>
+    </div>
   );
 };
 

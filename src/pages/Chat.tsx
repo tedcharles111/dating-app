@@ -89,8 +89,8 @@ const Chat: React.FC = () => {
   if (!match) {
     return (
       <div className="container mx-auto px-4 py-8 text-center">
-        <h2 className="text-2xl font-semibold text-gray-700">Match not found</</h2>
-      </</div>
+        <h2 className="text-2xl font-semibold text-gray-700">Match not found</h2>
+      </div>
     );
   }
 
@@ -99,14 +99,14 @@ const Chat: React.FC = () => {
       <div className="glass-card px-4 py-3 flex items-center space-x-4">
         <button onClick={() => navigate(-1)} className="p-1 rounded-full hover:bg-pink-100">
           <ArrowLeft className="text-love-primary" size={24} />
-        </</button>
+        </button>
         <img
           src={match.photos[0]}
           alt={match.name}
           className="w-12 h-12 rounded-full object-cover"
         />
-        <h2 className="text-xl font-semibold text-gray-800">{match.name}</</h2>
-      </</div>
+        <h2 className="text-xl font-semibold text-gray-800">{match.name}</h2>
+      </div>
 
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.map((message) => (
@@ -121,18 +121,18 @@ const Chat: React.FC = () => {
                   : 'bg-gray-200 text-gray-800'
               }`}
             >
-              <p>{message.text}</</p>
+              <p>{message.text}</p>
               <p className={`text-xs mt-1 ${
                 message.senderId === 'current'
                   ? 'text-white/70'
                   : 'text-gray-500'
               }`}>
                 {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-              </</p>
-            </</div>
-          </</div>
+              </p>
+            </div>
+          </div>
         ))}
-      </</div>
+      </div>
 
       <form onSubmit={handleSendMessage} className="p-4 border-t border-gray-200">
         <div className="flex items-center space-x-2">
@@ -148,10 +148,10 @@ const Chat: React.FC = () => {
             className="bg-love-primary p-2 rounded-full text-white hover:bg-love-dark transition-colors"
           >
             <Send size={20} />
-          </</button>
-        </</div>
-      </</form>
-    </</div>
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 

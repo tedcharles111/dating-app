@@ -76,7 +76,7 @@ const Matches: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-love-primary mb-8 text-center">Discover</</h1>
+      <h1 className="text-3xl font-bold text-love-primary mb-8 text-center">Discover</h1>
 
       {currentMatch && (
         <div className="max-w-md mx-auto">
@@ -96,35 +96,35 @@ const Matches: React.FC = () => {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <div className="flex items-center justify-between text-white">
-                    <</div>
-                      <h2 className="text-2xl font-bold">{currentMatch.name}, {currentMatch.age}</</h2>
-                      <p className="text-sm">{currentMatch.distance} miles away</</p>
-                    </</div>
+                    </div>
+                      <h2 className="text-2xl font-bold">{currentMatch.name}, {currentMatch.age}</h2>
+                      <p className="text-sm">{currentMatch.distance} miles away</p>
+                    </div>
                     <button
                       onClick={() => navigate(`/chat/${currentMatch.id}`)}
                       className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
                     >
                       <MessageCircle size={20} />
-                    </</button>
-                  </</div>
-                </</div>
-              </</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
 
               <div className="p-4">
-                <p className="text-gray-700 mb-4">{currentMatch.bio}</</p>
+                <p className="text-gray-700 mb-4">{currentMatch.bio}</p>
 
                 <div className="mb-4">
-                  <h3 className="font-semibold text-gray-700 mb-2">Interests</</h3>
+                  <h3 className="font-semibold text-gray-700 mb-2">Interests</h3>
                   <div className="flex flex-wrap gap-2">
                     {currentMatch.interests.map((interest, index) => (
                       <span key={index} className="bg-love-primary/10 text-love-primary px-3 py-1 rounded-full text-sm">
                         {interest}
-                      </</span>
+                      </span>
                     ))}
-                  </</div>
-                </</div>
-              </</div>
-            </</div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="flex justify-center space-x-4 mt-6">
               <button
@@ -132,25 +132,25 @@ const Matches: React.FC = () => {
                 className="bg-white p-4 rounded-full shadow-lg hover:bg-gray-50 transition-colors"
               >
                 <X className="text-gray-400" size={28} />
-              </</button>
+              </button>
               <button
                 onClick={handleLike}
                 className="bg-love-primary p-4 rounded-full shadow-lg hover:bg-love-dark transition-colors"
               >
                 <Heart className="text-white" size={28} fill="white" />
-              </</button>
-            </</div>
+              </button>
+            </div>
           </motion.</div>
-        </</div>
+        </div>
       )}
 
       {currentIndex >= matches.length - 1 && (
         <div className="text-center mt-12">
-          <h2 className="text-2xl font-semibold text-gray-700 mb-4">No more profiles</</h2>
-          <p className="text-gray-500">Check back later for new potential matches!</</p>
-        </</div>
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">No more profiles</h2>
+          <p className="text-gray-500">Check back later for new potential matches!</p>
+        </div>
       )}
-    </</div>
+    </div>
   );
 };
 

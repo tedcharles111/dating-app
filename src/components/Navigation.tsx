@@ -28,11 +28,11 @@ const Navigation: React.FC = () => {
               aria-label={item.label}
             >
               <item.icon size={24} />
-            </</Link>
+            </Link>
           ))}
-        </</div>
-      </</div>
-    </</nav>
+        </div>
+      </div>
+    </nav>
   );
 };
 

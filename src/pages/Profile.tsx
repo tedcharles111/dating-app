@@ -49,7 +49,7 @@ const Profile: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-love-primary mb-8 text-center">Create Your Profile</</h1>
+      <h1 className="text-3xl font-bold text-love-primary mb-8 text-center">Create Your Profile</h1>
 
       <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
         <div className="glass-card p-6 rounded-xl">
@@ -64,9 +64,9 @@ const Profile: React.FC = () => {
                 {index === 0 && (
                   <div className="absolute inset-0 bg-black bg-opacity-20 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <Camera className="text-white" size={24} />
-                  </</div>
+                  </div>
                 )}
-              </</div>
+              </div>
             ))}
             {photos.length < 6 && (
               <button
@@ -75,13 +75,13 @@ const Profile: React.FC = () => {
                 className="w-full h-32 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center hover:border-love-primary transition-colors"
               >
                 <Plus className="text-gray-400" size={24} />
-              </</button>
+              </button>
             )}
-          </</div>
+          </div>
 
           <div className="space-y-4">
-            <</div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Name</</label>
+            </div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
               <input
                 type="text"
                 value={name}
@@ -89,10 +89,10 @@ const Profile: React.FC = () => {
                 className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-love-primary"
                 required
               />
-            </</div>
+            </div>
 
-            <</div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Age</</label>
+            </div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Age</label>
               <input
                 type="number"
                 value={age}
@@ -101,10 +101,10 @@ const Profile: React.FC = () => {
                 required
                 min="18"
               />
-            </</div>
+            </div>
 
-            <</div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Bio</</label>
+            </div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Bio</label>
               <textarea
                 value={bio}
                 onChange={(e) => setBio(e.target.value)}
@@ -113,10 +113,10 @@ const Profile: React.FC = () => {
                 placeholder="Tell us about yourself..."
                 required
               />
-            </</div>
+            </div>
 
-            <</div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Interests</</label>
+            </div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Interests</label>
               <div className="flex flex-wrap gap-2 mb-2">
                 {interests.map((interest, index) => (
                   <span key={index} className="bg-love-primary text-white px-3 py-1 rounded-full text-sm flex items-center">
@@ -127,10 +127,10 @@ const Profile: React.FC = () => {
                       className="ml-2"
                     >
                       <X size={14} />
-                    </</button>
-                  </</span>
+                    </button>
+                  </span>
                 ))}
-              </</div>
+              </div>
               <div className="flex">
                 <input
                   type="text"
@@ -145,20 +145,20 @@ const Profile: React.FC = () => {
                   className="bg-love-primary text-white px-4 py-2 rounded-r-lg hover:bg-love-dark transition-colors"
                 >
                   Add
-                </</button>
-              </</div>
-            </</div>
-          </</div>
-        </</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <button
           type="submit"
           className="w-full bg-love-primary text-white py-3 rounded-lg font-semibold hover:bg-love-dark transition-colors"
         >
           Save Profile
-        </</button>
-      </</form>
-    </</div>
+        </button>
+      </form>
+    </div>
   );
 };
 
